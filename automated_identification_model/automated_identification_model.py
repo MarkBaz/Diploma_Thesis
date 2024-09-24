@@ -326,9 +326,9 @@ with open('manual_vs_automatic_labels_output.txt', 'w') as file:
 
 
 # Add the window labels to your DataFrame
-#data['label'] = window_labels
-#data['event_labels'] = event_labels
-#data['event_true_labels'] = event_true_labels
+data['label'] = window_labels
+data['event_labels'] = event_labels
+data['event_true_labels'] = event_true_labels
 
 # Create a new DataFrame for window labels
 #window_labels_df = pd.DataFrame({'label': window_labels})
@@ -337,4 +337,4 @@ with open('manual_vs_automatic_labels_output.txt', 'w') as file:
 #data = pd.concat([window_labels_df], ignore_index=True, axis=1)
 
 # Save the DataFrame back to the CSV file
-#data.to_csv('json1_labeled.csv', index=False)
+data.to_csv('json1_labeled.csv', index=False)
